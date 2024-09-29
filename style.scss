@@ -21,6 +21,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #faf8f3;
 }
 
 #page1 {
@@ -33,6 +34,7 @@ body {
     width: 100%;
     object-fit: cover;
     position: absolute;
+    margin-bottom: 3vw;
   }
 }
 
@@ -89,4 +91,34 @@ nav {
     font-size: 1.4vw;
     font-weight: 100;
   }
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+  padding: 3vw;
+}
+
+#page2 .elem {
+  margin-top: 3vw;
+}
+
+#page2-head {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page2-head h1 {
+  font-size: 2vw;
+  font-weight: lighter;
+}
+
+#page2 .elem span {
+  font-family: nb;
+  font-size: 4vw;
+  font-weight: 500;
+  padding: 10vw;
 }

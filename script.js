@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function mouseEffect() {
   let page1Content = document.querySelector("#page1-content");
 
@@ -18,10 +20,25 @@ function mouseEffect() {
   });
   page1Content.addEventListener("mouseleave", function () {
     gsap.to(cursor, {
-      sacle: 0,
+      scale: 0,
       opacity: 0,
     });
   });
 }
-
 mouseEffect();
+
+function page2Animation() {
+  gsap.from(".elem h1 span", {
+    y: 120,
+    stagger: 0.2,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#page2",
+      scroller: "#main",
+      start: "top 47%",
+      end: "top 37%",
+      scrub: 2,
+    },
+  });
+}
+page2Animation();
